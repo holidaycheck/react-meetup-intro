@@ -35,7 +35,8 @@ const images = {
     collaboration: require("../assets/collaboration.jpg"),
     tooling: require("../assets/tooling.jpg"),
     jenkins: require("../assets/jenkins-docker.png"),
-    mesos: require("../assets/mesos.png")
+    mesos: require("../assets/mesos.png"),
+    release: require("../assets/release.png")
 };
 
 preloader(images);
@@ -164,15 +165,15 @@ export default class Presentation extends React.Component {
                         <Image height="180px" width="auto" src={images.mesos.replace("/", "")}/>
                     </Slide>
 
-                    <Slide transition={["slide"]} bgColor="primary">
+                    <Slide transition={["slide"]} bgImage={images.release.replace("/", "")} bgDarken={0.65}>
                         <Heading size={2} caps fit textColor="tertiary">
                             Release to production
                         </Heading>
                         <Heading size={2} fit caps textColor="tertiary" margin="20px auto">
-                            with one click
+                            With one click
                         </Heading>
                         <Heading size={2} fit caps textColor="tertiary" margin="20px auto">
-                            after final acceptance testing
+                            Multiple times a day
                         </Heading>
                     </Slide>
                 </Deck>
