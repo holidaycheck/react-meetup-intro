@@ -163,6 +163,18 @@ export default class Presentation extends React.Component {
                         <Image height="180px" width="auto" src={images.jenkins.replace("/", "")}/>
                         <Image height="180px" width="auto" src={images.mesos.replace("/", "")}/>
                     </Slide>
+
+                    <Slide transition={["slide"]} bgColor="primary">
+                        <Heading size={2} caps fit textColor="tertiary">
+                            Release to production
+                        </Heading>
+                        <Heading size={2} fit caps textColor="tertiary" margin="20px auto">
+                            with one click
+                        </Heading>
+                        <Heading size={2} fit caps textColor="tertiary" margin="20px auto">
+                            after final acceptance testing
+                        </Heading>
+                    </Slide>
                 </Deck>
             </Spectacle>
         );
