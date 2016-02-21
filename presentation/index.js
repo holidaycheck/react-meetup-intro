@@ -30,7 +30,7 @@ require("spectacle/lib/themes/default/index.css");
 const images = {
     city: require("../assets/city.jpg"),
     logo: require("../assets/logo-hc.png"),
-    testing: require("../assets/darth-testing.png"),
+    testing: require("../assets/vader.jpg"),
     stack: require("../assets/tech-stack.jpg"),
     collaboration: require("../assets/collaboration.jpg"),
     tooling: require("../assets/tooling.jpg"),
