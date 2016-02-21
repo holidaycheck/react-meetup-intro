@@ -36,7 +36,8 @@ const images = {
     tooling: require("../assets/tooling.jpg"),
     jenkins: require("../assets/jenkins-docker.png"),
     mesos: require("../assets/mesos.png"),
-    release: require("../assets/release.png")
+    release: require("../assets/release.png"),
+    uncleSam: require("../assets/uncle-sam.png")
 };
 
 preloader(images);
@@ -177,6 +178,20 @@ export default class Presentation extends React.Component {
 
                         <Heading size={2} fit caps textColor="tertiary">
                             Multiple times a day
+                        </Heading>
+                    </Slide>
+
+                    <Slide transition={["slide"]} bgColor="black">
+                        <Heading size={2} caps fit textColor="tertiary">
+                            Do you want to know more?
+                        </Heading>
+
+                        <Image src={images.uncleSam.replace("/", "")} margin="30px auto 20px" width="375px"/>
+
+                        <Heading size={5} caps textColor="tertiary" margin="20px auto">
+                            <Link href="https://github.com/holidaycheck/jobs" textColor="secondary">
+                                Join us!
+                            </Link>
                         </Heading>
                     </Slide>
                 </Deck>
