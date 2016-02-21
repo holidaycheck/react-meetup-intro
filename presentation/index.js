@@ -42,7 +42,8 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-    primary: "#0058A3"
+    primary: "#0058A3",
+    secondary: "#5497D0"
 });
 
 export default class Presentation extends React.Component {
@@ -74,7 +75,7 @@ export default class Presentation extends React.Component {
 
                     <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
                         <Appear fid="1">
-                            <Heading size={1} caps fit textColor="primary">
+                            <Heading size={1} caps fit textColor="secondary">
                                 1 Mono Repository
                             </Heading>
                         </Appear>
@@ -84,7 +85,7 @@ export default class Presentation extends React.Component {
                             </Heading>
                         </Appear>
                         <Appear fid="3">
-                            <Heading size={1} caps fit textColor="primary">
+                            <Heading size={1} caps fit textColor="secondary">
                                 45 Developers
                             </Heading>
                         </Appear>
@@ -94,7 +95,7 @@ export default class Presentation extends React.Component {
                             </Heading>
                         </Appear>
                         <Appear fid="5">
-                            <Heading size={1} caps fit textColor="primary">
+                            <Heading size={1} caps fit textColor="secondary">
                                 3000 Unit tests
                             </Heading>
                         </Appear>
@@ -146,8 +147,8 @@ export default class Presentation extends React.Component {
                         <Heading size={2} caps fit textColor="tertiary">
                             Better collaboration
                         </Heading>
-                        <Heading size={2} caps textColor="primary">
-                            with
+                        <Heading size={2} caps textColor="secondary">
+                            through
                         </Heading>
                         <Heading size={2} caps fit textColor="tertiary">
                             Better quality
@@ -169,10 +170,12 @@ export default class Presentation extends React.Component {
                         <Heading size={2} caps fit textColor="tertiary">
                             Release to production
                         </Heading>
-                        <Heading size={2} fit caps textColor="tertiary" margin="20px auto">
+
+                        <Heading size={2} fit caps textColor="secondary">
                             With one click
                         </Heading>
-                        <Heading size={2} fit caps textColor="tertiary" margin="20px auto">
+
+                        <Heading size={2} fit caps textColor="tertiary">
                             Multiple times a day
                         </Heading>
                     </Slide>
